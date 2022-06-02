@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html onload="updateLoop()">
+  <head>
+    <title>funky monke gaem</title>
+    
+    <script src="monke.js"></script>
+    <style>
+    
+    body {
+      background-color: #08699e;
+    }
+    
+    #monkeclick {
+    margin-left: 100px;
+    position: absolute;
+    top: 20%;
+    }
+    
+    #monkestore {
+      position: absolute;
+      top: 10%;
+      right: 50px;
+      width: 200px;
+      border: 3px solid gray;
+      border-style: inset;
+      background-color: #404040;
+      padding: 0 10px 0 10px;
+    }
+    
+    </style>
+    
+  </head>
+  
+  <body>
+    <h1>monke</h1>
+    
+    <div id="monkestore" onclick="updateLoop()">
+      
+    <h2 id="monkeclicker" onclick="changeClicker()" onmouseover="clickerInfo()" onmouseout="hideclickerInfo()" >monkey clickers    0</h2>
+    <h4 id="clickercost"></h4>
+    
+    <h2 id="bananatree" onclick="changeTree()" onmouseover="treeInfo()" onmouseout="hidetreeInfo()" >banana tree    0</h2>
+    <h4 id="treecost"></h4>
+    </div>
+    
+    <div id="monkeclick">
+      
+      <img id="monke" onclick="changeMonkes()" src="monke.jpeg">
+      <h2 id="monkes">0 monkeys</h2>
+      <h3 id="mps">per second: 0</h3>
+    
+    </div>
+    
+      
+  </body>
+</html>
